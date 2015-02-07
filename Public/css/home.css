@@ -1,0 +1,40 @@
+.main {
+  background-image: url("/Public/images/login_bg.jpg");
+  height: 700px; }
+  .main .body_wellcome h1 {
+    margin-top: 130px;
+    font-size: 38px; }
+  .main .body_right h2 {
+    margin-top: 80px;
+    margin-bottom: 150px;
+    padding-left: 450px; }
+  .main .body_right h2 a {
+    margin-top: 130px;
+    color: #fff;
+    line-height: 44px;
+    margin-bottom: 30px;
+    text-shadow: none;
+    font-weight: 700;
+    text-decoration: none; }
+  .main .body_right h2 a:hover {
+    color: #00ff00; }
+  .main h1, .main h2, .main h3 {
+    color: #fff;
+    line-height: 44px;
+    margin-bottom: 30px;
+    text-shadow: none;
+    font-weight: 700; }
+  .main .body_wellcome h5 {
+    margin-top: 200px; }
+  .main .body_wellcome h5 a {
+    color: #fff;
+    line-height: 44px;
+    margin-bottom: 30px;
+    text-shadow: none;
+    font-weight: 700; }
+  .main .register {
+    display: none; }
+  .main .register, .main .login {
+    position: absolute; }
+
+/*# sourceMappingURL=home.css.map */

@@ -1,0 +1,152 @@
+<extend name="./Public/layout.html"/>
+<block name="content">
+    <div class="col-md-12">
+        <h3 class="entry "><strong>注册配置</strong></h3>
+        <div class="register_box col-md-12">
+            <dl class="col-md-12">
+                <dt class="col-md-3"><strong>注册方式：</strong></dt>
+                <dd class="col-md-9">
+                    <label><input type="radio" name="site_closed" value="1" checked="checked"
+                                  onclick="admin.siteConfig(this.value)">开放注册 </label>
+                    <label><input type="radio" name="site_closed" value="0"
+                                  onclick="admin.siteConfig(this.value)">仅邀请注册 </label>
+                    <label><input type="radio" name="site_closed" value="0"
+                                  onclick="admin.siteConfig(this.value)">仅管理员邀请注册 </label>
+                    <label><input type="radio" name="site_closed" value="0"
+                                  onclick="admin.siteConfig(this.value)">仅第三方帐号绑定 </label>
+                </dd>
+            </dl>
+            <dl class="col-md-12">
+                <dt class="col-md-3"><strong>邮箱后缀：</strong></dt>
+                <dd class="col-md-3"><input type="text" class="form-control" placeholder="" value=""></dd>
+            </dl>
+            <dl class="col-md-12">
+                <dt class="col-md-3"><strong>站点口号：</strong></dt>
+                <dd class="col-md-3">
+                    <input type="text" class="form-control" placeholder="" value="最有价值的社会化网络产品">
+                    <p>只允许以上后缀的邮箱注册站点。按回车添加，多个输入后用英文逗号,分割，如“@qq.com,@sina.com”</p>
+                </dd>
+            </dl>
+            <dl class="col-md-12">
+                <dt class="col-md-3"><strong>需要审核：</strong></dt>
+                <dd class="col-md-9">
+                    <label><input type="radio" name="site_closed" value="1"
+                                  onclick="admin.siteConfig(this.value)">开启 </label>
+                    <label><input type="radio" name="site_closed" value="0" checked="checked"
+                                  onclick="admin.siteConfig(this.value)">关闭 </label>
+                </dd>
+            </dl>
+            <dl class="col-md-12">
+                <dt class="col-md-3"><strong>需要激活：</strong></dt>
+                <dd class="col-md-9">
+                    <label><input type="radio" name="site_closed" value="1"
+                                  onclick="admin.siteConfig(this.value)">开启 </label>
+                    <label><input type="radio" name="site_closed" value="0" checked="checked"
+                                  onclick="admin.siteConfig(this.value)">关闭 </label>
+                </dd>
+            </dl>
+            <dl class="col-md-12">
+                <dt class="col-md-3"><strong>上传头像步骤：</strong></dt>
+                <dd class="col-md-9">
+                    <label><input type="radio" name="site_closed" value="1"
+                                  onclick="admin.siteConfig(this.value)">开启 </label>
+                    <label><input type="radio" name="site_closed" value="0" checked="checked"
+                                  onclick="admin.siteConfig(this.value)">关闭 </label>
+                </dd>
+            </dl>
+            <dl class="col-md-12">
+                <dt class="col-md-3"><strong>强制上传头像：</strong></dt>
+                <dd class="col-md-9">
+                    <label><input type="radio" name="site_closed" value="1"
+                                  onclick="admin.siteConfig(this.value)">是，强制上传 </label>
+                    <label><input type="radio" name="site_closed" value="0" checked="checked"
+                                  onclick="admin.siteConfig(this.value)">否，可跳过 </label>
+                </dd>
+            </dl>
+            <dl class="col-md-12">
+                <dt class="col-md-3"><strong>设置个人标签步骤：</strong></dt>
+                <dd class="col-md-9">
+                    <label><input type="radio" name="site_closed" value="1"
+                                  onclick="admin.siteConfig(this.value)">开启 </label>
+                    <label><input type="radio" name="site_closed" value="0" checked="checked"
+                                  onclick="admin.siteConfig(this.value)">关闭 </label>
+                </dd>
+            </dl>
+            <dl class="col-md-12">
+                <dt class="col-md-3"><strong>允许设置标签数量：</strong></dt>
+                <dd class="col-md-3">
+                    <input type="text" class="form-control" placeholder="" value="5">
+                </dd>
+            </dl>
+            <dl class="col-md-12">
+                <dt class="col-md-3"><strong>关注感兴趣的人步骤：</strong></dt>
+                <dd class="col-md-9">
+                    <label><input type="radio" name="site_closed" value="1"
+                                  onclick="admin.siteConfig(this.value)">开启 </label>
+                    <label><input type="radio" name="site_closed" value="0" checked="checked"
+                                  onclick="admin.siteConfig(this.value)">关闭 </label>
+                </dd>
+            </dl>
+            <dl class="col-md-12">
+                <dt class="col-md-3"><strong>推荐规则：</strong></dt>
+                <dd class="col-md-9">
+                    <label><input type="radio" name="site_closed" value="1"
+                                  onclick="admin.siteConfig(this.value)">开启 </label>
+                    <label><input type="radio" name="site_closed" value="0" checked="checked"
+                                  onclick="admin.siteConfig(this.value)">关闭 </label>
+                </dd>
+            </dl>
+            <dl class="col-md-12">
+                <dt class="col-md-3"><strong>推荐关注用户：</strong></dt>
+                <dd class="col-md-3">
+                    <input type="text" class="form-control" placeholder="" value="5">
+                </dd>
+            </dl>
+            <dl class="col-md-12">
+                <dt class="col-md-3"><strong>默认关注用户：</strong></dt>
+                <dd class="col-md-3">
+                    <input type="text" class="form-control" placeholder="" value="5">
+                </dd>
+            </dl>
+            <dl class="col-md-12">
+                <dt class="col-md-3"><strong>双向关注用户：</strong></dt>
+                <dd class="col-md-3">
+                    <input type="text" class="form-control" placeholder="" value="5">
+                </dd>
+            </dl>
+            <dl class="col-md-12">
+                <dt class="col-md-3"><strong>默认用户组：</strong></dt>
+                <dd class="col-md-9">
+                    <label><input type="radio" name="site_closed" value="1"
+                                  onclick="admin.siteConfig(this.value)">管理员 </label>
+                    <label><input type="radio" name="site_closed" value="0" checked="checked"
+                                  onclick="admin.siteConfig(this.value)">巡逻员 </label>
+                    <label><input type="radio" name="site_closed" value="0" checked="checked"
+                                  onclick="admin.siteConfig(this.value)">正常用户 </label>
+                    <label><input type="radio" name="site_closed" value="0" checked="checked"
+                                  onclick="admin.siteConfig(this.value)">禁言用户 </label>
+                    <label><input type="radio" name="site_closed" value="0" checked="checked"
+                                  onclick="admin.siteConfig(this.value)">个人认证 </label>
+                    <label><input type="radio" name="site_closed" value="0" checked="checked"
+                                  onclick="admin.siteConfig(this.value)">企业/组织认证 </label>
+                    <label><input type="radio" name="site_closed" value="0" checked="checked"
+                                  onclick="admin.siteConfig(this.value)">达人用户 </label>
+
+                </dd>
+            </dl>
+            <dl class="col-md-12">
+                <dt class="col-md-3"><strong>发送欢迎邮件：</strong></dt>
+                <dd class="col-md-9">
+                    <label><input type="radio" name="site_closed" value="1"
+                                  onclick="admin.siteConfig(this.value)">开启 </label>
+                    <label><input type="radio" name="site_closed" value="0" checked="checked"
+                                  onclick="admin.siteConfig(this.value)">关闭 </label>
+                </dd>
+            </dl>
+        </div>
+        <div class="system_bottom_btn">
+            <button type="button" class="btn btn-primary col-md-offset-6">保存</button>
+        </div>
+    </div>
+
+</block>

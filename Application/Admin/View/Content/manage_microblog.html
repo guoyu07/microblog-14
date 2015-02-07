@@ -1,0 +1,160 @@
+<extend name="./Public/layout.html"/>
+
+<block name="content">
+    <div class="col-md-12">
+        <h3 class="entry "><strong>动态管理</strong></h3>
+
+        <div class="article_manage">
+            <ul class="nav nav-tabs">
+                <li role="presentation" class="active article"><a href="#">动态管理</a></li>
+                <li role="presentation" class="article"><a href="#">待审列表</a></li>
+                <li role="presentation" class="article"><a href="#">回收站</a></li>
+            </ul>
+        </div>
+        <div class="article_box">
+            <div class="article_list">
+                <div class="article_edit">
+                    <button type="button" class="btn btn-info">搜索动态</button>
+                    <button type="button" class="btn btn-info">删除动态</button>
+                </div>
+                <div class="list">
+                    <table class="table table-bordered nav_set">
+                        <thead>
+                        <tr>
+                            <th class="line_l">
+                                <input type="checkbox" id="checkbox_handle" onclick="admin.checkAll(this)" value="0">
+                            </th>
+                            <th class="line_l">动态ID</th>
+                            <th class="line_l">用户ID</th>
+                            <th class="line_l">用户名</th>
+                            <th class="line_l">数据</th>
+                            <th class="line_l">发布时间</th>
+                            <th class="line_l">微博类型</th>
+                            <th class="line_l">来自</th>
+                            <th class="line_l">操作</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td class="line_l">
+                                <input type="checkbox"  onclick="admin.checkAll(this)" value="0">
+                            </td>
+                            <td class="line_l">3</td>
+                            <td class="line_l">2</td>
+                            <td class="line_l"><a href="">哥不灵</a></td>
+                            <td class="line_l">
+                                <div>
+                                    今天真是太冷了,都不敢出门了<br>
+                                    <img src="" alt=""/>
+                                </div>
+                            </td>
+                            <td class="line_l">2015-01-28 16:43:03</td>
+                            <td class="line_l">图片微博</td>
+                            <td class="line_l">网站</td>
+                            <td class="line_l">
+                                <a href=""><span class="glyphicon glyphicon-remove-sign" ></span></a>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="article_list add_nav">
+                <div class="article_edit">
+                    <button type="button" class="btn btn-info">搜索动态</button>
+                    <button type="button" class="btn btn-info">通过</button>
+                    <button type="button" class="btn btn-info">删除</button>
+                </div>
+                <div class="list" >
+                    <table class="table table-bordered nav_set">
+                        <thead>
+                        <tr>
+                            <th class="line_l">
+                                <input type="checkbox"  onclick="admin.checkAll(this)" value="0">
+                            </th>
+                            <th class="line_l">动态ID</th>
+                            <th class="line_l">用户ID</th>
+                            <th class="line_l">用户名</th>
+                            <th class="line_l">数据</th>
+                            <th class="line_l">发布时间</th>
+                            <th class="line_l">微博类型</th>
+                            <th class="line_l">来自</th>
+                            <th class="line_l">操作</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td class="line_l">
+                                <input type="checkbox"  onclick="admin.checkAll(this)" value="0">
+                            </td>
+                            <td class="line_l">3</td>
+                            <td class="line_l">2</td>
+                            <td class="line_l"><a href="">哥不灵</a></td>
+                            <td class="line_l">
+                                <div>
+                                    今天真是太冷了,都不敢出门了<br>
+                                    <img src="" alt=""/>
+                                </div>
+                            </td>
+                            <td class="line_l">2015-01-28 16:43:03</td>
+                            <td class="line_l">图片微博</td>
+                            <td class="line_l">网站</td>
+                            <td class="line_l">
+                                <a href=""><span class="glyphicon glyphicon-remove-sign" ></span></a>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="article_list add_nav">
+                <div class="article_edit">
+                    <button type="button" class="btn btn-info">搜索动态</button>
+                    <button type="button" class="btn btn-info">彻底删除</button>
+                </div>
+                <div class="list">
+                    <table class="table table-bordered nav_set">
+                        <thead>
+                        <tr>
+                            <th class="line_l">
+                                <input type="checkbox"  onclick="admin.checkAll(this)" value="0">
+                            </th>
+                            <th class="line_l">动态ID</th>
+                            <th class="line_l">用户ID</th>
+                            <th class="line_l">用户名</th>
+                            <th class="line_l">数据</th>
+                            <th class="line_l">发布时间</th>
+                            <th class="line_l">微博类型</th>
+                            <th class="line_l">来自</th>
+                            <th class="line_l">操作</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td class="line_l">
+                                <input type="checkbox"  onclick="admin.checkAll(this)" value="0">
+                            </td>
+                            <td class="line_l">3</td>
+                            <td class="line_l">2</td>
+                            <td class="line_l"><a href="">哥不灵</a></td>
+                            <td class="line_l">
+                                <div>
+                                    今天真是太冷了,都不敢出门了<br>
+                                    <img src="" alt=""/>
+                                </div>
+                            </td>
+                            <td class="line_l">2015-01-28 16:43:03</td>
+                            <td class="line_l">图片微博</td>
+                            <td class="line_l">网站</td>
+                            <td class="line_l">
+                                <a href=""><span class="glyphicon glyphicon-remove-sign" ></span></a>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</block>

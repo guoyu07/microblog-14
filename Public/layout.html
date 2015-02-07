@@ -1,0 +1,136 @@
+<html>
+<head>
+    <title>我的微博</title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="__PUBLIC__/css/admin.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/js/admin.js"/>
+
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="head col-md-12">
+            <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">微博后台管理中心</a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav header_nav">
+                            <li <eq name="c" value="Index">class="active"</eq>>
+                                <a href="{:U('Admin/Index/index')}">
+                                    <span class="glyphicon glyphicon-home" aria-hidden="true"></span>  首页 <span class="sr-only">(current)</span>
+                                </a>
+                            </li>
+                            <li <eq name="c" value="System">class="active"</eq>><a href="{:U('Admin/System/system')}"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span>  系统</a>
+                            </li>
+                            <li <eq name="c" value="User">class="active"</eq>><a href="{:U('Admin/User/manage_user')}"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>  用户</a></li>
+                            <li <eq name="c" value="Content">class="active"</eq>><a href="{:U('Admin/Content/announcement')}"><span class="glyphicon glyphicon-book" aria-hidden="true"></span>  内容</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#">刷新</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                   aria-expanded="false">您好:管理员! <span class="caret"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#">返回前台</a></li>
+                                    <li><a href="#">退出</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </div>
+                <!-- /.container-fluid -->
+            </nav>
+        </div>
+        <div class="body">
+            <div class="body_left col-md-2">
+                <eq name="c" value="Index">
+                    <div class="index">
+                        <div class="list-group index"><a href="{:U('Admin/Index/index')}" class="list-group-item list-group-item-danger"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>  首页</a>
+                        </div>
+                        <div class="list-group list-groups1">
+                            <a href="{:U('Admin/Index/index')}" class="list-group-item list-group-item-success <eq name="a" value="index">active</eq>"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>  基本信息</a>
+                            <a href="{:U('Admin/Index/article_manage')}" class="list-group-item list-group-item-success  <eq name="a" value="article_manage">active</eq>"><span class="glyphicon glyphicon-subscript" aria-hidden="true"></span>  管理日志</a>
+                            <a href="{:U('Admin/Index/send_message')}" class="list-group-item list-group-item-success  <eq name="a" value="send_message">active</eq>"><span class="glyphicon glyphicon-plane" aria-hidden="true"></span>  群发消息</a>
+                            <a href="{:U('Admin/Index/clear_session')}" class="list-group-item list-group-item-success <eq name="a" value="clear_session">active</eq>"><span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span>  缓存清理</a>
+                            <a href="{:U('Admin/Index/set_session')}" class="list-group-item list-group-item-success <eq name="a" value="set_session">active</eq>"><span class="glyphicon glyphicon-refresh" aria-hidden="true"></span>  缓存配置</a>
+                        </div>
+                    </div>
+                </eq>
+                <eq name="c" value="System">
+                    <div class="index_system">
+                        <div class="list-group index"><a href="{:U('Admin/Index/index')}" class="list-group-item list-group-item-danger">首页</a>
+                        </div>
+                        <div class="list-group list-groups2">
+                            <a href="{:U('Admin/System/system')}" class="list-group-item list-group-item-success <eq name="a" value="system">active</eq>">站点配置</a>
+                            <a href="{:U('Admin/System/nav')}" class="list-group-item list-group-item-success <eq name="a" value="nav">active</eq>">导航配置</a>
+                            <a href="{:U('Admin/System/register')}" class="list-group-item list-group-item-success <eq name="a" value="register">active</eq>">注册配置</a>
+                            <a href="{:U('Admin/System/visiter')}" class="list-group-item list-group-item-success <eq name="a" value="visiter">active</eq>">游客配置</a>
+                            <a href="{:U('Admin/System/microblog')}" class="list-group-item list-group-item-success <eq name="a" value="microblog">active</eq>">微博配置</a>
+                            <a href="{:U('Admin/System/email')}" class="list-group-item list-group-item-success <eq name="a" value="email">active</eq>">邮件配置</a>
+                            <a href="{:U('Admin/System/attachment')}" class="list-group-item list-group-item-success <eq name="a" value="attachment">active</eq>">附件配置</a>
+                            <a href="{:U('Admin/System/system')}" class="list-group-item list-group-item-success <eq name="a" value="system">active</eq>">地区配置</a>
+                            <a href="{:U('Admin/System/system')}" class="list-group-item list-group-item-success <eq name="a" value="system">active</eq>">语言配置</a>
+                            <a href="{:U('Admin/System/system')}" class="list-group-item list-group-item-success <eq name="a" value="system">active</eq>">消息配置</a>
+                            <a href="{:U('Admin/System/system')}" class="list-group-item list-group-item-success <eq name="a" value="system">active</eq>">部门配置</a>
+                        </div>
+                    </div>
+                </eq>
+                <eq name="c" value="User">
+                    <div class="index_user">
+                        <div class="list-group index"><a href="{:U('Admin/Index/index')}" class="list-group-item list-group-item-danger">首页</a>
+                        </div>
+                        <div class="list-group list-groups3">
+                            <a href="{:U('Admin/User/manage_user')}" class="list-group-item list-group-item-success <eq name="a" value="manage_user">active</eq>">用户管理</a>
+                            <a href="{:U('Admin/User/user_group')}" class="list-group-item list-group-item-success <eq name="a" value="user_group">active</eq>">用户组管理</a>
+                            <a href="{:U('Admin/User/data')}" class="list-group-item list-group-item-success <eq name="a" value="data">active</eq>">资料配置</a>
+                            <a href="{:U('Admin/User/user_tag')}" class="list-group-item list-group-item-success <eq name="a" value="user_tag">active</eq>">用户标签</a>
+                            <a href="{:U('Admin/User/user_certification')}" class="list-group-item list-group-item-success <eq name="a" value="user_certification">active</eq>">用户认证</a>
+                            <a href="{:U('Admin/User/find_user')}" class="list-group-item list-group-item-success <eq name="a" value="find_user">active</eq>">找人配置</a>
+                            <a href="{:U('Admin/User/find_recommend')}" class="list-group-item list-group-item-success <eq name="a" value="find_recommend">active</eq>">找人推荐</a>
+                        </div>
+                    </div>
+                </eq>
+                <eq name="c" value="Content">
+                    <div class="index_user">
+                        <div class="list-group index"><a href="{:U('Admin/Index/index')}" class="list-group-item list-group-item-danger">首页</a>
+                        </div>
+                        <div class="list-group list-groups4">
+                            <a href="{:U('Admin/Content/announcement')}" class="list-group-item list-group-item-success <eq name="a" value="announcement">active</eq>">公告配置</a>
+                            <a href="{:U('Admin/Content/manage_microblog')}" class="list-group-item list-group-item-success <eq name="a" value="manage_microblog">active</eq>">微博管理</a>
+                            <a href="{:U('Admin/Content/manage_topic')}" class="list-group-item list-group-item-success <eq name="a" value="manage_topic">active</eq>">话题管理</a>
+                            <a href="{:U('Admin/Content/manage_comment')}" class="list-group-item list-group-item-success <eq name="a" value="manage_comment">active</eq>">评论管理</a>
+                            <a href="{:U('Admin/Content/manage_private_letter')}" class="list-group-item list-group-item-success <eq name="a" value="manage_private_letter">active</eq>">私信管理</a>
+                            <a href="{:U('Admin/Content/manage_attachment')}" class="list-group-item list-group-item-success <eq name="a" value="manage_attachment">active</eq>">附件管理</a>
+                            <a href="{:U('Admin/Content/manage_report')}" class="list-group-item list-group-item-success <eq name="a" value="manage_report">active</eq>">举报管理</a>
+                            <a href="{:U('Admin/Content/manage_tag')}" class="list-group-item list-group-item-success <eq name="a" value="manage_tag">active</eq>">标签管理</a>
+                            <a href="{:U('Admin/Content/account_invite')}" class="list-group-item list-group-item-success <eq name="a" value="account_invite">active</eq>">邀请统计</a>
+                            <a href="{:U('Admin/Content/manage_tpl')}" class="list-group-item list-group-item-success <eq name="a" value="manage_tpl">active</eq>">模板管理</a>
+                        </div>
+                    </div>
+                </eq>
+            </div>
+            <div class="body_right col-md-10 col-md-offset-2" >
+                <block name="content"></block>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+<script src="http://cdn.bootcss.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<script src="__PUBLIC__/js/admin.js"/></script>
+</body>
+</html>

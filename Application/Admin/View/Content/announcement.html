@@ -1,0 +1,45 @@
+<extend name="./Public/layout.html"/>
+
+<block name="content">
+    <div class="col-md-12">
+        <h3 class="entry "><strong>公告配置</strong></h3>
+        <div class="article_box">
+            <div class="article_list">
+                <div class="article_edit">
+                    <button type="button" class="btn btn-info">添加公告</button>
+                    <button type="button" class="btn btn-info">删除公告</button>
+                </div>
+                <div class="list">
+                    <table class="table table-bordered nav_set">
+                        <thead>
+                        <tr>
+                            <th class="line_l">
+                                <input type="checkbox"  onclick="admin.checkAll(this)" value="0">
+                            </th>
+                            <th class="line_l">ID</th>
+                            <th class="line_l">公告标题</th>
+                            <th class="line_l">发布者</th>
+                            <th class="line_l">操作</th>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td class="line_l">
+                                <input type="checkbox" onclick="admin.checkAll(this)" value="0">
+                            </td>
+                            <td class="line_l">public</td>
+                            <td class="line_l">开启</td>
+                            <td class="line_l">头部导航</td>
+                            <td class="line_l">
+                                <a href=""><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+                                <a href=""><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
+                                <a href=""><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span></a>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</block>

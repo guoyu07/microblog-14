@@ -1,0 +1,74 @@
+<extend name="./Public/layout.html"/>
+<block name="content">
+    <div class="col-md-12">
+        <h3 class="entry "><strong>微博配置</strong></h3>
+
+        <div class="register_box system_box col-md-12">
+            <dl class="col-md-12">
+                <dt class="col-md-3"><strong>微博字数：</strong></dt>
+                <dd class="col-md-3">
+                    <input type="text" class="form-control" placeholder="" value="140">
+                </dd>
+            </dl>
+            <dl class="col-md-12">
+                <dt class="col-md-3"><strong>微博类型：</strong></dt>
+                <dd class="col-md-9">
+                    <label><input type="radio" name="site_closed" value="1"
+                                  onclick="admin.siteConfig(this.value)">表情 </label>
+                    <label><input type="radio" name="site_closed" value="1"
+                                  onclick="admin.siteConfig(this.value)">好友 </label>
+                    <label><input type="radio" name="site_closed" value="1"
+                                  onclick="admin.siteConfig(this.value)">图片 </label>
+                    <label><input type="radio" name="site_closed" value="1"
+                                  onclick="admin.siteConfig(this.value)">视频 </label>
+                    <label><input type="radio" name="site_closed" value="1"
+                                  onclick="admin.siteConfig(this.value)">附件 </label>
+                    <label><input type="radio" name="site_closed" value="1"
+                                  onclick="admin.siteConfig(this.value)">话题 </label>
+                    <label><input type="radio" name="site_closed" value="1"
+                                  onclick="admin.siteConfig(this.value)">投稿 </label>
+                </dd>
+            </dl>
+            <dl class="col-md-12">
+                <dt class="col-md-3"><strong>微博设置：</strong></dt>
+                <dd class="col-md-9">
+                    <label><input type="radio" name="site_closed" value="1"
+                                  onclick="admin.siteConfig(this.value)">表情 </label>
+                    <label><input type="radio" name="site_closed" value="1"
+                                  onclick="admin.siteConfig(this.value)">好友 </label>
+                    <label><input type="radio" name="site_closed" value="1"
+                                  onclick="admin.siteConfig(this.value)">图片 </label>
+                    <label><input type="radio" name="site_closed" value="1"
+                                  onclick="admin.siteConfig(this.value)">图片 </label>
+
+                </dd>
+            </dl>
+            <dl class="col-md-12">
+                <dt class="col-md-3"><strong>微博提示语：</strong></dt>
+                <dd class="col-md-3">
+                    <input type="text" class="form-control" placeholder="" value="记录,是一种态度!">
+                </dd>
+            </dl>
+            <dl class="col-md-12">
+                <dt class="col-md-3"><strong>微博框默认话题：</strong></dt>
+                <dd class="col-md-3">
+                    <input type="text" class="form-control" placeholder="" value="">
+                    <p>不需输入＃号，如：伦敦奥运会</p>
+                </dd>
+            </dl>
+            <dl class="col-md-12">
+                <dt class="col-md-3"><strong>@范围配置：</strong></dt>
+                <dd class="col-md-9">
+                    <label><input type="radio" name="site_closed" value="1"
+                                  onclick="admin.siteConfig(this.value)">是 </label>
+                    <label><input type="radio" name="site_closed" value="0" checked="checked"
+                                  onclick="admin.siteConfig(this.value)">否 </label>
+                </dd>
+            </dl>
+        </div>
+        <div class="system_bottom_btn">
+            <button type="button" class="btn btn-primary col-md-offset-5">保存</button>
+        </div>
+    </div>
+
+</block>

@@ -1,0 +1,53 @@
+<extend name="./Public/layout.html"/>
+
+<block name="content">
+    <div class="col-md-12">
+        <h3 class="entry ">
+            <strong>系统消息</strong>
+        </h3>
+        <div class="message col-md-12">
+            <form action="">
+                <dl class="col-md-12">
+                    <dt class="col-md-3"><strong>用户组:</strong></dt>
+                    <dd class="col-md-9">
+                        <select name="user_group_id" id="form_user_group_id">
+                            <option value="0" selected="selected">全部用户</option>
+                            <option value="1">管理员</option>
+                            <option value="2">巡逻员</option>
+                            <option value="3">正常用户</option>
+                            <option value="4">禁言用户</option>
+                            <option value="5">个人认证</option>
+                            <option value="6">企业/组织认证</option>
+                            <option value="7">达人用户</option>
+                        </select>
+                    </dd>
+                </dl>
+                <dl class="col-md-12">
+                    <dt class="col-md-3"><strong>发送内容:</strong></dt>
+                    <dd class="col-md-9">
+                        <textarea name="editor1" class="content"></textarea>
+                        <script src="__PUBLIC__/ckeditor/ckeditor.js"></script>
+                        <script type="text/javascript" src="__PUBLIC__/ckfinder/ckfinder.js"></script>
+
+                        <script>
+                            CKEDITOR.replace('editor1',
+                                    {
+                                        filebrowserBrowseUrl: '/static/ckfinder/ckfinder.html',
+                                        filebrowserImageBrowseUrl: '/static/ckfinder/ckfinder.html?type=Images',
+                                        filebrowserFlashBrowseUrl: '/static/ckfinder/ckfinder.html?type=Flash',
+                                        filebrowserUploadUrl: '/static/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files',
+                                        filebrowserImageUploadUrl: '/static/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images',
+                                        filebrowserFlashUploadUrl: '/static/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash'
+                                    });
+                        </script>
+                        <p>内容将在前台系统消息中展示</p>
+                    </dd>
+                </dl>
+            </form>
+        </div>
+        <div class="bottom_btn">
+            <button type="button" class="btn btn-primary col-md-offset-10">保存</button>
+        </div>
+    </div>
+
+</block>

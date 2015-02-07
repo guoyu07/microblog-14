@@ -1,0 +1,97 @@
+<extend name="./Public/layout.html"/>
+
+<block name="content">
+    <div class="col-md-12">
+        <h3 class="entry "><strong>管理日志</strong></h3>
+
+        <div class="article_manage">
+            <ul class="nav nav-tabs">
+                <li role="presentation" class="active article"><a href="#">日志列表</a></li>
+                <li role="presentation" class="article"><a href="#">日志归档</a></li>
+            </ul>
+        </div>
+        <div class="article_box">
+            <div class="article_list">
+                <div class="article_edit">
+                    <button type="button" class="btn btn-info">搜索</button>
+                    <button type="button" class="btn btn-info">删除选中项</button>
+                </div>
+                <div class="list" id="list">
+                    <table class="table table-bordered">
+                        <thead>
+                        <tr>
+                            <th style="width:30px;">
+                                <input type="checkbox" id="checkbox_handle" onclick="admin.checkAll(this)" value="0">
+                            </th>
+
+                            <th class="line_l">用户ID</th>
+                            <th class="line_l">用户帐号</th>
+                            <th class="line_l">操作详情</th>
+                            <th class="line_l">IP</th>
+                            <th class="line_l">日志数据</th>
+                            <th class="line_l">记录时间</th>
+                            <th class="line_l">类型</th>
+                            <th class="line_l">操作</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td style="width:30px;">
+                                <input type="checkbox" onclick="admin.checkAll(this)" value="0">
+                            </td>
+
+                            <td class="line_l">123</td>
+                            <td class="line_l">用户帐号</td>
+                            <td class="line_l">操作详情</td>
+                            <td class="line_l">IP
+                            </th>
+                            <td class="line_l">日志数据</td>
+                            <td class="line_l">记录时间</td>
+                            <td class="line_l">类型</td>
+                            <td class="line_l">操作</td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="article_list place_on_file">
+                <div class="article_edit">
+                    <button type="button" class="btn btn-info">清除六个月前日志</button>
+                    <button type="button" class="btn btn-info">清除十二个月前日志</button>
+                    <button type="button" class="btn btn-info">重建归档表</button>
+                </div>
+                <div class="list">
+                    <table class="table table-bordered">
+                        <thead>
+                        <tr>
+                            <th class="line_l">表名</th>
+                            <th class="line_l">数据引擎</th>
+                            <th class="line_l">条数</th>
+                            <th class="line_l">数据大小</th>
+                            <th class="line_l">创建时间</th>
+                            <th class="line_l">最后纪录</th>
+                            <th class="line_l">字符集</th>
+                            <th class="line_l">操作</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td class="line_l">article</td>
+                            <td class="line_l">XZP</td>
+                            <td class="line_l">6</td>
+                            <td class="line_l">833 B</td>
+                            <td class="line_l">2015/1/30</td>
+                            <td class="line_l">2015/1/30</td>
+                            <td class="line_l">SSS</td>
+                            <td class="line_l"><a href="">查看</a></td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</block>

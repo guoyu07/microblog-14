@@ -1,0 +1,113 @@
+.head{
+    padding: 0 0;
+}
+.body_left{
+    background-color: #dff0d8;
+    height: 781px;
+    position: fixed;
+    top: 70px;
+    left: 0;
+    z-index: 1030;
+}
+.body_left .active{
+
+}
+.index{
+    margin-bottom: 0;
+}
+/*.index_system{*/
+    /*display: none;*/
+/*}*/
+/*.index_user{*/
+    /*display: none;*/
+/*}*/
+/*首页CSS*/
+.body_right{
+    background-color: #ffffff;
+    border-top: 1px solid #999999;
+    border-left: 1px solid #999999;
+    margin-top: 70px;
+}
+.entry{
+    margin-top: 8px;
+    padding-bottom: 15px;
+    border-bottom: 3px solid #9B410E;
+}
+.user_info{
+    margin-top: 25px;
+    padding-bottom:8px;
+    border-bottom: 1px solid #9B410E;
+}
+.server_info dl dt{
+    text-align: right;
+}
+/*首页CSS结束*/
+
+/*//管理日志CSS开始*/
+.article_manage{
+    background-color:#dff0d8;
+    margin-bottom: 15px;
+}
+.article_edit{
+    padding-bottom: 15px;
+}
+.place_on_file{
+    display: none;
+}
+.add_nav{
+    display: none;
+}
+.visit_nav{
+    display: none;
+}
+.system_bottom_nav{
+    display: none;
+}
+/*//管理日志CSS结束*/
+
+/*//群发信息CSS开始*/
+    .message{
+        padding-top: 10px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #9B410E;;
+    }
+    .message dl dt{
+        text-align: right;
+    }
+/*//群发信息CSS结束*/
+
+/*//系统设置CSS开始*/
+    .system_box{
+        padding-top: 10px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #9B410E;
+    }
+    .system_box dl{
+        border-bottom:1px dashed #9e8f9e;
+        padding-bottom: 15px;
+    }
+    .system_box dl dt{
+        text-align: right;
+    }
+    .add_image img{
+        display: none;
+    }
+    .nav_set{
+        font-size: 8px;
+    }
+    .register_box{
+        padding-top: 10px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #9B410E;
+    }
+    .register_box dl{
+        border-bottom:1px dashed #9e8f9e;
+        padding-bottom: 15px;
+    }
+    .register_box dl dt{
+        text-align: right;
+    }
+    .invate_configuration dt{
+        text-align: right;
+    }
+/*//系统设置CSS结束*/

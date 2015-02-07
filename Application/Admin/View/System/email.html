@@ -1,0 +1,74 @@
+<extend name="./Public/layout.html"/>
+<block name="content">
+    <div class="col-md-12">
+        <h3 class="entry "><strong>邮件配置</strong></h3>
+
+        <div class="register_box system_box col-md-12">
+            <dl class="col-md-12">
+                <dt class="col-md-3"><strong>微博字数：</strong></dt>
+                <dd class="col-md-3">
+                    <select name="email_sendtype" id="form_email_sendtype">
+                        <option value="smtp" selected="selected">远程smtp</option>
+                        <option value="mail">本地mail</option>
+                    </select>
+                </dd>
+            </dl>
+            <dl class="col-md-12">
+                <dt class="col-md-3"><strong>SMTP地址：</strong></dt>
+                <dd class="col-md-3">
+                    <input type="text" class="form-control" placeholder="" value="smtp.exmail.qq.com">
+                    <p>发送邮箱的smtp地址。如: smtp.gmail.com或smtp.qq.com</p>
+                </dd>
+            </dl>
+            <dl class="col-md-12">
+                <dt class="col-md-3"><strong>是否启用SSL连接：</strong></dt>
+                <dd class="col-md-9">
+                    <label><input type="radio" name="site_closed" value="1"
+                                  onclick="admin.siteConfig(this.value)">表情 </label>
+                    <label><input type="radio" name="site_closed" value="1"
+                                  onclick="admin.siteConfig(this.value)">好友 </label>
+                    <p>此选项需要服务器环境支持SSL（如果使用Gmail或QQ邮箱，请选择是）</p>
+                </dd>
+            </dl>
+            <dl class="col-md-12">
+                <dt class="col-md-3"><strong>端口：</strong></dt>
+                <dd class="col-md-3">
+                    <input type="text" class="form-control" placeholder="" value="25">
+                    <p>smtp的端口。默认为25。具体请参看各STMP服务商的设置说明 （如果使用Gmail或QQ邮箱，请将端口设为465）</p>
+                </dd>
+            </dl>
+            <dl class="col-md-12">
+                <dt class="col-md-3"><strong>邮箱地址：</strong></dt>
+                <dd class="col-md-3">
+                    <input type="text" class="form-control" placeholder="" value="">
+                    <p>邮箱地址请输入完整地址email@email.com格式</p>
+                </dd>
+            </dl>
+            <dl class="col-md-12">
+                <dt class="col-md-3"><strong>邮箱密码：</strong></dt>
+                <dd class="col-md-3">
+                    <input type="text" class="form-control" placeholder="" value="">
+                    <p>邮箱密码</p>
+                </dd>
+            </dl>
+            <dl class="col-md-12">
+                <dt class="col-md-3"><strong>发送者邮箱：</strong></dt>
+                <dd class="col-md-3">
+                    <input type="text" class="form-control" placeholder="" value="">
+                    <p>邮件中显示的发送者邮箱</p>
+                </dd>
+            </dl>
+            <dl class="col-md-12">
+                <dt class="col-md-3"><strong>测试邮件：</strong></dt>
+                <dd class="col-md-3">
+                    <input type="text" class="form-control" placeholder="" value="">
+                    <a href="">点击测试邮件</a>
+                </dd>
+            </dl>
+            </div>
+        <div class="system_bottom_btn">
+            <button type="button" class="btn btn-primary col-md-offset-5">保存</button>
+        </div>
+    </div>
+
+</block>

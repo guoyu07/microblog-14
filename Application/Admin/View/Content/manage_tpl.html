@@ -1,0 +1,92 @@
+<extend name="./Public/layout.html"/>
+
+<block name="content">
+    <div class="col-md-12">
+        <h3 class="entry "><strong>模板管理</strong></h3>
+
+        <div class="article_manage">
+            <ul class="nav nav-tabs">
+                <li role="presentation" class="active article"><a href="#">模板管理</a></li>
+                <li role="presentation" class="article"><a href="#">添加模板</a></li>
+            </ul>
+        </div>
+        <div class="article_box">
+            <div class="article_list">
+                <div class="article_edit">
+                    <button type="button" class="btn btn-info">添加模板</button>
+                    <button type="button" class="btn btn-info">删除模板</button>
+                </div>
+                <div class="list">
+                    <table class="table table-bordered nav_set">
+                        <thead>
+                        <tr>
+                            <th class="line_l">
+                                <input type="checkbox"  onclick="admin.checkAll(this)" value="0">
+                            </th>
+                            <th class="line_l">模板ID</th>
+                            <th class="line_l">名称</th>
+                            <th class="line_l">别名</th>
+                            <th class="line_l">标题模板</th>
+                            <th class="line_l">内容模板</th>
+                            <th class="line_l">语言</th>
+                            <th class="line_l">模板类型</th>
+                            <th class="line_l">模板类型2</th>
+                            <th class="line_l">是否默认缓存</th>
+                            <th class="line_l">创建时间</th>
+                            <th class="line_l">操作</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td class="line_l">
+                                <input type="checkbox"  onclick="admin.checkAll(this)" value="0">
+                            </td>
+                            <td class="line_l">77</td>
+                            <td class="line_l">pic2.jpg</td>
+                            <td class="line_l">93.9 KB</td>
+                            <td class="line_l">管理员</td>
+                            <td class="line_l">2015-01-30 15:19:13</td>
+                            <td class="line_l">网站</td>
+                            <td class="line_l">网站</td>
+                            <td class="line_l">422714992@qq.com</td>
+                            <td class="line_l">网站</td>
+                            <td class="line_l">网站</td>
+                            <td class="line_l">
+                                <a href=""><span class="glyphicon glyphicon-remove-sign" ></span></a>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="article_list add_nav">
+                <div class="article_edit">
+                    <button type="button" class="btn btn-info">搜索</button>
+                </div>
+                <div class="list">
+                    <table class="table table-bordered nav_set">
+                        <thead>
+                        <tr>
+                            <th class="line_l">名次</th>
+                            <th class="line_l">邀请人</th>
+                            <th class="line_l">邀请数量</th>
+                            <th class="line_l">操作</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td class="line_l">7700</td>
+                            <td class="line_l">pic2.jpg</td>
+                            <td class="line_l">93.9 KB</td>
+                            <td class="line_l">
+                                <a href=""><span class="glyphicon glyphicon-remove-sign" ></span></a>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</block>

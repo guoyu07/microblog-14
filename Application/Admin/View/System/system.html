@@ -1,0 +1,161 @@
+<extend name="./Public/layout.html"/>
+<block name="content">
+    <div class="col-md-12">
+        <h3 class="entry "><strong>站点配置</strong></h3>
+
+        <div class="system_box col-md-12">
+            <dl class="col-md-12">
+                <dt class="col-md-3"><strong>站点状态：</strong></dt>
+                <dd class="col-md-9">
+                    <label><input type="radio" name="site_closed" value="1" checked="checked"
+                                  onclick="admin.siteConfig(this.value)">开启 </label>
+                    <label><input type="radio" name="site_closed" value="0"
+                                  onclick="admin.siteConfig(this.value)">关闭 </label>
+                </dd>
+            </dl>
+            <dl class="col-md-12">
+                <dt class="col-md-3"><strong>站点名称：</strong></dt>
+                <dd class="col-md-3"><input type="text" class="form-control" placeholder="" value="xzp v1"></dd>
+            </dl>
+            <dl class="col-md-12">
+                <dt class="col-md-3"><strong>站点口号：</strong></dt>
+                <dd class="col-md-3">
+                    <input type="text" class="form-control" placeholder="" value="最有价值的社会化网络产品">
+                    <p>会显示在默认登录页、默认title中</p>
+                </dd>
+            </dl>
+            <dl class="col-md-12">
+                <dt class="col-md-3"><strong>页面头信息关键字：</strong></dt>
+                <dd class="col-md-3">
+                    <input type="text" class="form-control" placeholder="" value="">
+                </dd>
+            </dl>
+            <dl class="col-md-12">
+                <dt class="col-md-3"><strong>页面头信息描述：</strong></dt>
+                <dd class="col-md-3">
+                    <input type="text" class="form-control" placeholder="" value="">
+                </dd>
+            </dl>
+            <dl class="col-md-12">
+                <dt class="col-md-3"><strong>版权信息：</strong></dt>
+                <dd class="col-md-4">
+                    <input type="text" class="form-control" placeholder=""
+                           value="©2012 ZhishiSoft All Rights Reserved.">
+
+                    <p>如:Copyright 2012 ZhishiSoft All Rights Reserved.</p>
+                </dd>
+            </dl>
+            <dl class="col-md-12">
+                <dt class="col-md-3"><strong>site_logo_w3g：</strong></dt>
+                <dd class="col-md-3">
+                    <input type="text" class="form-control" placeholder="" value="">
+                </dd>
+            </dl>
+            <dl class="col-md-12">
+                <dt class="col-md-3"><strong>登录页面背景图：</strong></dt>
+                <dd class="col-md-5">
+                    <div class="col-md-12">
+                        <div class="col-sm-6">
+                            <input type="text" class="span5 form-control add_image" id="thumb1" name="thumb1">
+
+                        </div>
+                        <div class="col-sm-2 upload_btn">
+                            <input type="button" value="上 传" onclick="BrowseServer('thumb1','img_show1')"
+                                   class="btn btn-success"/>
+                        </div>
+                        <div class="add_image">
+                            <img src="" id="img_show1" width="350px" height="160px"/>
+                            <script type="text/javascript" src="__PUBLIC__/ckfinder/ckfinder.js"></script>
+                            <script>
+                                function BrowseServer(thumb, img_show) {
+                                    var finder = new CKFinder();
+
+                                    //当选中图片时执行的函数
+                                    finder.selectActionFunction = function (fileUrl) {
+                                        $("#" + thumb).val(fileUrl);
+                                        $("#" + img_show).attr("src", "" + fileUrl + "");
+                                    }
+
+                                    finder.popup();//调用窗口
+                                }
+                            </script>
+                        </div>
+                    </div>
+                </dd>
+            </dl>
+            <dl class="col-md-12">
+                <dt class="col-md-3"><strong>站点预留域名：</strong></dt>
+                <dd class="col-md-3">
+                    <input type="text" class="form-control" placeholder="" value="">
+                    <p>按回车添加，多个输入后用英文逗号,分割</p>
+                </dd>
+            </dl>
+            <dl class="col-md-12">
+                <dt class="col-md-3"><strong>站点预留昵称：</strong></dt>
+                <dd class="col-md-3">
+                    <input type="text" class="form-control" placeholder="" value="">
+                    <p>按回车添加，多个输入后用英文逗号,分割</p>
+                </dd>
+            </dl>
+            <dl class="col-md-12">
+                <dt class="col-md-3"><strong>客服邮箱：</strong></dt>
+                <dd class="col-md-3">
+                    <input type="text" class="form-control" placeholder="" value="422714992@qq.com">
+                </dd>
+            </dl>
+            <dl class="col-md-12">
+                <dt class="col-md-3"><strong>默认首页:</strong></dt>
+                <dd class="col-md-9">
+                    <select name="user_group_id" id="form_user_group_id">
+                        <option value="0" selected="selected">我的首页</option>
+                        <option value="1">频道</option>
+                        <option value="2">微吧</option>
+                        <option value="3">找人</option>
+                    </select>
+                </dd>
+            </dl>
+            <dl class="col-md-12">
+                <dt class="col-md-3"><strong>站点风格包:</strong></dt>
+                <dd class="col-md-9">
+                    <select name="user_group_id" id="form_user_group_id">
+                    </select>
+                </dd>
+            </dl>
+            <dl class="col-md-12">
+                <dt class="col-md-3"><strong>JS版本：</strong></dt>
+                <dd class="col-md-3">
+                    <input type="text" class="form-control" placeholder="" value="20130523">
+                    <p>JS、CSS等静态文件修改后，可以修改此版本号，刷新用户浏览器缓存</p>
+                </dd>
+            </dl>
+            <dl class="col-md-12">
+                <dt class="col-md-3"><strong>站点统计：</strong></dt>
+                <dd class="col-md-9">
+                    <label><input type="radio" name="site_closed" value="1" checked="checked"
+                                  onclick="admin.siteConfig(this.value)">开启 </label>
+                    <label><input type="radio" name="site_closed" value="0"
+                                  onclick="admin.siteConfig(this.value)">关闭 </label>
+                </dd>
+            </dl>
+            <dl class="col-md-12">
+                <dt class="col-md-3"><strong>伪静态开关：</strong></dt>
+                <dd class="col-md-9">
+                    <label><input type="radio" name="site_closed" value="1" checked="checked"
+                                  onclick="admin.siteConfig(this.value)">开启 </label>
+                    <label><input type="radio" name="site_closed" value="0"
+                                  onclick="admin.siteConfig(this.value)">关闭 </label>
+                </dd>
+            </dl>
+            <dl class="col-md-12">
+                <dt class="col-md-3"><strong>第三方统计代码：</strong></dt>
+                <dd class="col-md-9">
+                    <textarea name="site_analytics_code" id="form_site_analytics_code" rows="10" cols="80"></textarea>
+                </dd>
+            </dl>
+        </div>
+        <div class="system_bottom_btn">
+            <button type="button" class="btn btn-primary col-md-offset-9">保存</button>
+        </div>
+    </div>
+
+</block>

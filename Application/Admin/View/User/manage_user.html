@@ -1,0 +1,235 @@
+<extend name="./Public/layout.html"/>
+
+<block name="content">
+    <div class="col-md-12">
+        <h3 class="entry "><strong>用户管理</strong></h3>
+
+        <div class="article_manage">
+            <ul class="nav nav-tabs">
+                <li role="presentation" class="active article"><a href="#">用户列表</a></li>
+                <li role="presentation" class="article"><a href="#">待审列表</a></li>
+                <li role="presentation" class="article"><a href="#">禁用列表</a></li>
+                <li role="presentation" class="article"><a href="#">添加用户</a></li>
+            </ul>
+        </div>
+        <div class="article_box">
+            <div class="article_list">
+                <div class="article_edit">
+                    <button type="button" class="btn btn-info">搜索用户</button>
+                    <button type="button" class="btn btn-info">转移用户组</button>
+                </div>
+                <div class="list">
+                    <table class="table table-bordered nav_set">
+                        <thead>
+                        <tr>
+                            <th class="line_l">
+                                <input type="checkbox" id="checkbox_handle" onclick="admin.checkAll(this)" value="0">
+                            </th>
+                            <th class="line_l">UID</th>
+                            <th class="line_l">用户名</th>
+                            <th class="line_l">用户组</th>
+                            <th class="line_l">地区</th>
+                            <th class="line_l">是否审核</th>
+                            <th class="line_l">是否激活</th>
+                            <th class="line_l">是否初始化</th>
+                            <th class="line_l">注册时间</th>
+                            <th class="line_l">注册IP</th>
+                            <th class="line_l">操作</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td class="line_l">
+                                <input type="checkbox" id="checkbox_handle" onclick="admin.checkAll(this)" value="0">
+                            </td>
+                            <td class="line_l">首页</td>
+                            <td class="line_l">public</td>
+                            <td class="line_l">http://localhost/thinksns/index.php?app=people&mod=Index&act=index</td>
+                            <td class="line_l">当前窗口</td>
+                            <td class="line_l">开启</td>
+                            <td class="line_l">头部导航</td>
+                            <td class="line_l">2</td>
+                            <td class="line_l">头部导航</td>
+                            <td class="line_l">2</td>
+                            <td class="line_l">
+                                <a href=""><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+                                <a href=""><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
+                                <a href=""><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span></a>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="article_list add_nav">
+                <div class="article_edit">
+                    <button type="button" class="btn btn-info">搜索用户</button>
+                    <button type="button" class="btn btn-info">转移用户组</button>
+                </div>
+                <div class="list" >
+                    <table class="table table-bordered nav_set">
+                        <thead>
+                        <tr>
+                            <th class="line_l">
+                                <input type="checkbox" id="checkbox_handle" onclick="admin.checkAll(this)" value="0">
+                            </th>
+                            <th class="line_l">UID</th>
+                            <th class="line_l">用户名</th>
+                            <th class="line_l">用户组</th>
+                            <th class="line_l">地区</th>
+                            <th class="line_l">是否审核</th>
+                            <th class="line_l">是否激活</th>
+                            <th class="line_l">是否初始化</th>
+                            <th class="line_l">注册时间</th>
+                            <th class="line_l">注册IP</th>
+                            <th class="line_l">操作</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td class="line_l">
+                                <input type="checkbox" id="checkbox_handle" onclick="admin.checkAll(this)" value="0">
+                            </td>
+                            <td class="line_l">首页</td>
+                            <td class="line_l">public</td>
+                            <td class="line_l">http://localhost/thinksns/index.php?app=people&mod=Index&act=index</td>
+                            <td class="line_l">当前窗口</td>
+                            <td class="line_l">开启</td>
+                            <td class="line_l">头部导航</td>
+                            <td class="line_l">2</td>
+                            <td class="line_l">头部导航</td>
+                            <td class="line_l">2</td>
+                            <td class="line_l">
+                                <a href=""><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+                                <a href=""><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
+                                <a href=""><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="line_l">
+                                <input type="checkbox" id="checkbox_handle" onclick="admin.checkAll(this)" value="0">
+                            </td>
+                            <td class="line_l">首页</td>
+                            <td class="line_l">public</td>
+                            <td class="line_l">http://localhost/thinksns/index.php?app=people&mod=Index&act=index</td>
+                            <td class="line_l">当前窗口</td>
+                            <td class="line_l">开启</td>
+                            <td class="line_l">头部导航</td>
+                            <td class="line_l">2</td>
+                            <td class="line_l">头部导航</td>
+                            <td class="line_l">2</td>
+                            <td class="line_l">
+                                <a href=""><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+                                <a href=""><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
+                                <a href=""><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span></a>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="article_list add_nav">
+                <div class="article_edit">
+                    <button type="button" class="btn btn-info">搜索用户</button>
+                    <button type="button" class="btn btn-info">转移用户组</button>
+                </div>
+                <div class="list">
+                    <table class="table table-bordered nav_set">
+                        <thead>
+                        <tr>
+                            <th class="line_l">
+                                <input type="checkbox" id="checkbox_handle" onclick="admin.checkAll(this)" value="0">
+                            </th>
+                            <th class="line_l">UID</th>
+                            <th class="line_l">用户名</th>
+                            <th class="line_l">用户组</th>
+                            <th class="line_l">地区</th>
+                            <th class="line_l">是否审核</th>
+                            <th class="line_l">是否激活</th>
+                            <th class="line_l">是否初始化</th>
+                            <th class="line_l">注册时间</th>
+                            <th class="line_l">注册IP</th>
+                            <th class="line_l">操作</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td class="line_l">
+                                <input type="checkbox" id="checkbox_handle" onclick="admin.checkAll(this)" value="0">
+                            </td>
+                            <td class="line_l">首页</td>
+                            <td class="line_l">public</td>
+                            <td class="line_l">http://localhost/thinksns/index.php?app=people&mod=Index&act=index</td>
+                            <td class="line_l">当前窗口</td>
+                            <td class="line_l">开启</td>
+                            <td class="line_l">头部导航</td>
+                            <td class="line_l">2</td>
+                            <td class="line_l">头部导航</td>
+                            <td class="line_l">2</td>
+                            <td class="line_l">
+                                <a href=""><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+                                <a href=""><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
+                                <a href=""><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span></a>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="article_list add_nav">
+                <div class="list system_box col-md-12" >
+                    <dl class="col-md-12">
+                        <dt class="col-md-3"><strong>Email：</strong></dt>
+                        <dd class="col-md-3">
+                            <input type="text" class="form-control" placeholder="" value="">
+                        </dd>
+                    </dl>
+                    <dl class="col-md-12">
+                        <dt class="col-md-3"><strong>用户名：</strong></dt>
+                        <dd class="col-md-3">
+                            <input type="text" class="form-control" placeholder="" value="">
+                        </dd>
+                    </dl>
+                    <dl class="col-md-12">
+                        <dt class="col-md-3"><strong>密码：</strong></dt>
+                        <dd class="col-md-3">
+                            <input type="text" class="form-control" placeholder="" value="">
+                        </dd>
+                    </dl>
+                    <dl class="col-md-12">
+                        <dt class="col-md-3"><strong>性别：</strong></dt>
+                        <dd class="col-md-3">
+                            <input type="text" class="form-control" placeholder="" value="记录,是一种态度!">
+                        </dd>
+                    </dl>
+                    <dl class="col-md-12">
+                        <dt class="col-md-3"><strong>用户组：</strong></dt>
+                        <dd class="col-md-9">
+                            <label><input type="radio" name="site_closed" value="1"
+                                          onclick="admin.siteConfig(this.value)">是 </label>
+                            <label><input type="radio" name="site_closed" value="0" checked="checked"
+                                          onclick="admin.siteConfig(this.value)">否 </label>
+                        </dd>
+                    </dl>
+                    <dl class="col-md-12">
+                        <dt class="col-md-3"><strong>@范围配置：</strong></dt>
+                        <dd class="col-md-9">
+                            <label><input type="radio" name="site_closed" value="1"
+                                          onclick="admin.siteConfig(this.value)">是 </label>
+                            <label><input type="radio" name="site_closed" value="0" checked="checked"
+                                          onclick="admin.siteConfig(this.value)">否 </label>
+                            <label><input type="radio" name="site_closed" value="1"
+                                          onclick="admin.siteConfig(this.value)">是 </label>
+                            <label><input type="radio" name="site_closed" value="0" checked="checked"
+                                          onclick="admin.siteConfig(this.value)">否 </label>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+        <div class="system_bottom_btn">
+            <button type="button" class="btn btn-primary col-md-offset-5">保存</button>
+        </div>
+    </div>
+
+</block>

@@ -1,0 +1,38 @@
+<extend name="./Public/layout.html"/>
+
+<block name="content">
+    <div class="col-md-12">
+        <h3 class="entry "><strong>缓存配置</strong></h3>
+        <div class="article_box ">
+            <div class="article_list ">
+                <div class="list system_box col-md-12" >
+                    <dl class="col-md-12">
+                        <dt class="col-md-3"><strong>缓存类型：</strong></dt>
+                        <dd class="col-md-6">
+                            <label><input type="checkbox" name="findPeople[]" value="tag" checked="checked">文件缓存 </label>
+                            <label><input type="checkbox" name="findPeople[]" value="area" checked="checked">Xcache </label>
+                            <label><input type="checkbox" name="findPeople[]" value="verify" checked="checked">APC </label>
+                            <label><input type="checkbox" name="findPeople[]" value="official" checked="checked">Memcache </label>
+                        </dd>
+                    </dl>
+                    <dl class="col-md-12">
+                        <dt class="col-md-3"><strong>缓存配置：</strong></dt>
+                        <dd class="col-md-6">
+                            <input type="text" class="form-control" placeholder="" value="">
+                        </dd>
+                    </dl>
+                    <dl class="col-md-12">
+                        <dt class="col-md-3"><strong>运行状态：</strong></dt>
+                        <dd class="col-md-6">
+                            <label><input type="checkbox" name="findPeople[]" value="tag" checked="checked">文件缓存 </label>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="system_bottom_btn">
+                    <button type="button" class="btn btn-primary col-md-offset-6">保存</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</block>

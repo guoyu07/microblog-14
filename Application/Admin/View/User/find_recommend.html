@@ -1,0 +1,125 @@
+<extend name="./Public/layout.html"/>
+
+<block name="content">
+    <div class="col-md-12">
+        <h3 class="entry "><strong>官方用户分类</strong></h3>
+
+        <div class="article_manage">
+            <ul class="nav nav-tabs">
+                <li role="presentation" class="active article"><a href="#">推荐分类</a></li>
+                <li role="presentation" class="article"><a href="#">置顶用户</a></li>
+                <li role="presentation" class="article"><a href="#">添加推荐用户</a></li>
+                <li role="presentation" class="article"><a href="#">已推荐用户</a></li>
+            </ul>
+        </div>
+        <div class="article_box">
+            <div class="article_list">
+                <div class="article_edit">
+                    <button type="button" class="btn btn-info">添加一级分类</button>
+                </div>
+                <div class="list">
+                    <table class="table table-bordered nav_set">
+                        <thead>
+                        <tr>
+                            <th class="line_l">分类名称</th>
+                            <th class="line_l">操作</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td class="line_l">官方分类1</td>
+                            <td class="line_l">
+                                <a href=""><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
+                                <a href=""><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span></a>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="article_list add_nav">
+                <div class="list system_box col-md-12" >
+                    <dl class="col-md-12">
+                        <dt class="col-md-3"><strong>置顶用户：</strong></dt>
+                        <dd class="col-md-3">
+                            <input type="text" class="form-control" placeholder="" value="">
+                            <p>前台最多只能展示3个已认证用户</p>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="system_bottom_btn">
+                    <button type="button" class="btn btn-primary col-md-offset-5">保存</button>
+                </div>
+            </div>
+            <div class="article_list add_nav">
+                <div class="list system_box col-md-12" >
+                    <dl class="col-md-12">
+                        <dt class="col-md-3"><strong>用户：</strong></dt>
+                        <dd class="col-md-3">
+                            <input type="text" class="form-control" placeholder="" value="">
+                        </dd>
+                    </dl>
+                    <dl class="col-md-12">
+                        <dt class="col-md-3"><strong>分类：</strong></dt>
+                        <dd class="col-md-3">
+                            <select name="category" id="form_category">
+                                <option value="1">官方分类1</option>
+                                <option value="2">官方分类2</option>
+                                <option value="3">官方分类3</option>
+                            </select>
+                        </dd>
+                    </dl>
+                    <dl class="col-md-12">
+                        <dt class="col-md-3"><strong>相关信息：</strong></dt>
+                        <dd class="col-md-3">
+                            <textarea name="info" id="form_info" rows="10" cols="80"></textarea>
+                            </select>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="system_bottom_btn">
+                    <button type="button" class="btn btn-primary col-md-offset-8">保存</button>
+                </div>
+            </div>
+
+            <div class="article_list add_nav">
+                <div class="article_edit">
+                    <button type="button" class="btn btn-info">移除</button>
+                </div>
+                <div class="list" >
+                    <table class="table table-bordered nav_set">
+                        <thead>
+                        <tr>
+                            <th class="line_l">
+                                <input type="checkbox"  onclick="admin.checkAll(this)" value="0">
+                            </th>
+                            <th class="line_l">用户ID</th>
+                            <th class="line_l">用户昵称</th>
+                            <th class="line_l">分类名称</th>
+                            <th class="line_l">相关信息</th>
+                            <th class="line_l">操作</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td class="line_l">
+                                <input type="checkbox"  onclick="admin.checkAll(this)" value="0">
+                            </td>
+                            <td class="line_l">1</td>
+                            <td class="line_l">2</td>
+                            <td class="line_l">3:</td>
+                            <td class="line_l">4</td>
+                            <td class="line_l">
+                                <a href=""><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+                                <a href=""><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
+                                <a href=""><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span></a>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</block>
